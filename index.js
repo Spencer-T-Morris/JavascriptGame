@@ -1,1 +1,1 @@
-fight('spencer','A new challenger', 100 , 100);
+fight(prompt('what is your name'),prompt('who is this new challenger'), prompt('what is your health'), prompt('what is your opponents health'));
