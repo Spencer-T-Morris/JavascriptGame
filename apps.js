@@ -34,10 +34,10 @@ function fight(player1, player2, player1Health, player2Health) {
         if (attacker === player1) {
             player2Health = attackPlayer(player2Health);
             logHealth(player2, player2Health);
-        if (isDead(player2Health)) {
+            if (isDead(player2Health)) {
             logDeath(player1, player2);
-        break;
-        }}
+            break;
+        }
         else{
             player1Health = attackPlayer(player1Health);
             logHealth(player1, player1Health);
@@ -46,7 +46,7 @@ function fight(player1, player2, player1Health, player2Health) {
                     break;
                 }
         }
-    }
+    }}
 }
 const logHealth = (player, health) => {
     console.log(`${player} health: ${health}`);
@@ -58,6 +58,4 @@ const logHealth = (player, health) => {
 const logDeath = (winner, loser) => {
          console.log(`${winner} defeated ${loser}`);
     }
-
-    fight('s','A', 100 ,100);
     

@@ -1,0 +1,1 @@
+fight('spencer','A new challenger', 100 , 100);
